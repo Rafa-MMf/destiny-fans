@@ -1,0 +1,133 @@
+body { font-family: 'Montserrat', sans-serif; }
+
+/*----- Cabeçalho -----*/
+#menuBase {
+    margin: 10px;
+}
+
+#menu {
+    margin-left: 205px;
+    margin-top: -50px;
+
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+
+    display: flex;
+    justify-content: space-evenly;
+
+}
+#menu button {
+    border-right: 1px solid black !important;
+    padding-right: 4%;
+    background: transparent;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+#menu button, #menu b {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+#menu button:hover {
+    color: #346bc8;
+}
+
+#divBusca {
+    background-color: #efefef;
+    border: solid 2px black;
+    border-radius: 10px;
+    width: 300px;
+    height: 32px;
+    display: flex;
+    position: absolute;
+    left: 70%;
+    top: 2%;
+}
+
+#txtBusca{
+  float:left;
+  background-color:transparent;
+  padding-left:5px;
+  font-size:18px;
+  border:none;
+  height:32px;
+  width:223px;
+}
+
+#btnBusca{
+  border:none;
+  float:left;
+  height:32px;
+  border-radius:0 7px 7px 0;
+  width:70px;
+  font-weight:bold;
+  background: black;
+  color: white;
+}
+
+#divBusca img{
+  float:left;
+}
+
+/*----- Banner e barra lateral -----*/
+#container1 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.menuLateral {
+    width: 350px;
+    height: auto;
+    background: black;
+}
+
+.menuLateral button {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    min-height: 50px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    text-align: left;
+}
+.menuLateral button:hover, .botao:hover {
+    background-color: #3b6ca9;
+}
+
+/*----- Noticias e banner 2 -----*/
+#banner2 {
+    max-width: 300px;
+    height: auto;
+}
+
+#tituloNoticia {
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+.grid { display: grid; transition: box-shadow .3s; }
+.grid:hover { box-shadow: 0 0 8px 7px #a9a9a9; }
+.img { grid-area: img; }
+.img img { width: 100%; }
+.titulo { grid-area: titulo; font-size: 20px; height: 5px; margin-left: 5px; }
+.subtitulo { grid-area: subtitulo; font-size: 16px; height: 5px; margin-left: 5px; }
+.texto { grid-area: texto; font-size: 12px; margin-left: 5px; }
+.botao { grid-area: botao; font-family: 'Montserrat'; width: 100px; height: 30px; margin-left: auto; margin-right: auto; background: black; color: white;}
+.grid1 { grid-template-areas:
+            "img titulo"
+            "img subtitulo"
+            "img texto"
+            "img botao";
+}
+
+
+
+
+
+
+
+
+
